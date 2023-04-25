@@ -137,7 +137,7 @@ open the index.html file in your browser using the live server extension.
 
 #### 👤 Pablo Ezequiel Gonzales
 
-- GitHub: [@Cavein254](https://github.com/PabloEGonz)
+- GitHub: [@PabloEGonz](https://github.com/PabloEGonz)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -28,9 +28,15 @@ form.addEventListener('submit', (e) => {
 
 // load each book form the local array
 
-const removeBook = (bookItem) => {
+const removeBook = (bookItem ,index) => {
   const removeBtn = bookItem.querySelector('.remove');
   removeBtn.addEventListener('click', () => {
+  	books.forEach((book, index)=>{
+  		if (book.title === bookItem.textContent.split("by")[0].trim()) {
+  			books.splice(index, 1);
+  			localStorage.setItem('books', JSON.stringify(books));
+  		}
+  	})
     bookItem.remove();
   });
 };
