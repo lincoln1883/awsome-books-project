@@ -1,3 +1,50 @@
 h1 {
-  font-size: medium;
+  font-size: 25px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+ul li {
+  font-size: 17px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px auto;
+  border-radius: 5px;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(199, 195, 195);
+}
+
+ul li button {
+  background-color: hsl(0, 70%, 48%);
+  border-radius: 5px;
+  color: white;
+}
+
+form {
+  text-align: center;
+}
+
+form input {
+  border: 1px solid gray;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+form button {
+  margin-left: 35%;
+  background-color: #37d547;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 8px;
 }
