@@ -54,7 +54,7 @@ This is my first original project that designed to showcase my catalog, it is bu
 <details>
   <summary>JavaScript</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
