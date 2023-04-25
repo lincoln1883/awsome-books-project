@@ -68,3 +68,67 @@ formButton.addEventListener('click', (e) => {
   localStorage.setItem('books', JSON.stringify(books));
   addBookToList(newBook);
 });
+ //////
+//  let books = [];
+
+// // form declaration
+
+// const form = document.querySelector('#form');
+// const title = document.querySelector('#title');
+// const author = document.querySelector('#author');
+// const formButton = document.querySelector('#submit-button');
+// const bookList = document.querySelector('ul');
+// const bookShelf = JSON.parse(localStorage.getItem('book'));
+// const removeBtn = document.getElementsByClassName('remove');
+
+
+
+// if (bookShelf) {
+//     books = bookShelf;
+// } else {
+//     localStorage.setItem('book', JSON.stringify(books));
+//     bookList.innerHTML = '';
+//     books.forEach((book) => {
+//         const bookItem = document.createElement('li')
+//         bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove">Remove</button>`;
+//         bookList.appendChild(bookItem);
+//     });
+// }
+
+
+
+// formButton.addEventListener('click', () => {
+//     const newBook = {
+//         title: title.value,
+//         author: author.value,
+//     };
+//     books.push(newBook);
+//     localStorage.setItem('book', JSON.stringify(books));
+//     addBookToList();
+// });
+
+
+// function addBookToList() {
+//     bookList.innerHTML = '';
+
+//     books.forEach((book) => {
+//         const bookItem = document.createElement('li')
+//         bookItem.innerHTML = `${book.title} by ${book.author}<button class="remove">Remove</button>`;
+//         bookList.appendChild(bookItem);
+//     });
+// }
+// addBookToList();
+
+// function removeFromList() {
+//     for (let i = 0; i < removeBtn.length; i++) {
+//         removeBtn[i].onclick = () => {
+//             books.splice(i, 1);
+//             books = bookShelf;
+//             localStorage.setItem('book', JSON.stringify(books));
+//             addBookToList();
+//             removeFromList();
+//         }
+
+//     }
+// }
+// removeFromList();
