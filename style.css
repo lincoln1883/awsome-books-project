@@ -1,26 +1,85 @@
-
 body {
   padding: 0;
   margin: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0;
+  -webkit-box-shadow: 0 0 30px 3px #6a69696d;
+  box-shadow: 0 0 30px 3px #65616163;
+}
+
+nav .nav-lists {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-lists .nav-item {
+  font-size: 23px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav .nav-lists .nav-item:hover {
+  cursor: pointer;
+  transform: translateX(1px);
+  text-decoration: underline;
+  background-color: #f2dcb3;
+}
+
+nav .active {
+  color: rgb(223, 145, 9);
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
 main {
   padding: 50px 0;
   margin: 5% auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.display {
+  display: contents;
+}
+
+.localTime {
+  position: fixed;
+  top: 90px;
+  right: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
 }
 
-h1 {
-  font-size: 25px;
+h1,
+h2 {
   text-align: center;
+  font-size: 40px;
 }
 
 .list-display {
   border: 2px solid black;
   border-radius: 5px;
+  width: 60%;
 }
 
-ul {
+.sections .book-display {
   list-style: none;
   text-transform: capitalize;
   display: flex;
@@ -28,7 +87,7 @@ ul {
   padding: 5px;
 }
 
-ul li {
+.book-display .book-list {
   font-size: 17px;
   text-align: left;
   display: flex;
@@ -37,17 +96,13 @@ ul li {
   border-radius: 5px;
 }
 
-ul li:nth-child(odd) {
+.book-list:nth-child(odd) {
   background-color: rgb(199, 195, 195);
-}
-
-hr {
-  margin-top: 20px;
-  width: 50%;
 }
 
 form {
   text-align: center;
+  width: 60%;
 }
 
 form input {
@@ -58,9 +113,9 @@ form input {
 }
 
 form button {
-  margin-left: 35%;
+  margin-left: 43%;
   width: 60px;
-  background-color: #37d547;
+  background-color: #3234cb;
   color: white;
   border-radius: 5px;
   padding: 4px 8px;
@@ -70,4 +125,13 @@ ul li button {
   background-color: hsl(0, 70%, 48%);
   border-radius: 5px;
   color: white;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-left: 50px;
+  -webkit-box-shadow: 0 0 30px 3px #6a69696d;
+  box-shadow: 0 0 30px 3px #65616163;
 }
