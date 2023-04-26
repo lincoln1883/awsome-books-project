@@ -1,14 +1,14 @@
 
-body{
+body {
   padding: 0;
- margin: 0;
+  margin: 0;
 }
 
-main{
+main {
   padding: 50px 0;
   margin: 5% auto;
   width: 50%;
-  }
+}
 
 h1 {
   font-size: 25px;
@@ -41,13 +41,7 @@ ul li:nth-child(odd) {
   background-color: rgb(199, 195, 195);
 }
 
-ul li button {
-  background-color: hsl(0, 70%, 48%);
-  border-radius: 5px;
-  color: white;
-}
-
-hr{
+hr {
   margin-top: 20px;
   width: 50%;
 }
@@ -70,4 +64,10 @@ form button {
   color: white;
   border-radius: 5px;
   padding: 4px 8px;
+}
+
+ul li button {
+  background-color: hsl(0, 70%, 48%);
+  border-radius: 5px;
+  color: white;
 }
