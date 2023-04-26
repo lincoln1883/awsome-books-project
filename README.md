@@ -72,6 +72,10 @@ This project is the first of module two which focuses on the usage of JavaScript
 
 <!-- LIVE DEMO -->
 
+## 🚀 Static views <a name="live-demo"></a>
+
+- Coming soon
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - Coming soon

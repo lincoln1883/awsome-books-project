@@ -5,7 +5,9 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0;
   -webkit-box-shadow: 0 0 30px 3px #6a69696d;
   box-shadow: 0 0 30px 3px #65616163;
 }
@@ -43,7 +45,9 @@ nav .active {
 main {
   padding: 50px 0;
   margin: 5% auto;
-  width: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .display {
@@ -56,6 +60,13 @@ main {
   right: 30px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -65,6 +76,7 @@ h2 {
 .list-display {
   border: 2px solid black;
   border-radius: 5px;
+  width: 60%;
 }
 
 .sections .book-display {
@@ -90,6 +102,7 @@ h2 {
 
 form {
   text-align: center;
+  width: 60%;
 }
 
 form input {
