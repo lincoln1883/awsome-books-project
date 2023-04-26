@@ -13,11 +13,7 @@ class Book {
   static getBooks() {
     const bookInfo = localStorage.getItem('books');
     if (bookInfo !== null && bookInfo !== undefined) {
-      try {
-        return JSON.parse(bookInfo);
-      } catch (e) {
-        return e;
-      }
+      return JSON.parse(bookInfo);
     }
     return [];
   }
