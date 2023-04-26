@@ -36,8 +36,7 @@ class Book {
     this.addBookToList();
   }
 
-  handleFormSubmit(e) {
-    //e.preventDefault();
+  handleFormSubmit() {
     const title = titleInput.value;
     const author = authorInput.value;
     const book = new Book(title, author);
@@ -62,48 +61,42 @@ formButton.addEventListener('click', (e) => myBook.handleFormSubmit(e));
 bookList.addEventListener('click', (e) => myBook.handleRemoveButtonClick(e));
 myBook.addBookToList();
 
-const sections = document.getElementsByClassName('sections')
+const sections = document.getElementsByClassName('sections');
 const navList = document.getElementsByClassName('nav-item');
-
-
 
 for (let i = 0; i < navList.length; i += 1) {
   navList[i].addEventListener('click', () => {
     sections[i].classList.add('display');
     navList[i].classList.add('active');
-    for (let j = 0; j < navList.length; j++) {
-      if (i != j) {
-        sections[j].classList.remove("display");
+    for (let j = 0; j < navList.length; j += 1) {
+      if (i !== j) {
+        sections[j].classList.remove('display');
         sections[j].classList.add('hidden');
         navList[j].classList.remove('active');
       }
     }
-  })
+  });
 }
-
 
 const main = document.querySelector('main');
 const timeSlot = document.createElement('p');
-const section = document.querySelector('section')
+const section = document.querySelector('section');
 timeSlot.classList.add('localTime');
 
-console.log('main:', main);
-console.log('section:', section);
+const date = new Date();
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const month = months[date.getMonth()];
+const day = date.getDate();
+const year = date.getFullYear();
+let hour = date.getHours();
+let minute = date.getMinutes();
 
-const date = new Date()
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const month = months[date.getMonth()] 
-const day = date.getDate()
-const year = date.getFullYear()
-let hour = date.getHours()
-let minute = date.getMinutes()
-
-const timeOfDay = hour >= 12 ? "pm" :"am"
-hour = hour % 12;
-hour = hour ? hour : 12;
-minute = minute < 10 ? '0' + minute : minute;
+const timeOfDay = hour >= 12 ? 'pm' : 'am';
+hour %= 12;
+hour = hour || 12;
+minute = minute < 10 ? `0${minute}` : minute;
 const time = `${hour}:${minute} ${timeOfDay}`;
-const formattedDate = `${month} ${day}, ${year} ${time}`
+const formattedDate = `${month} ${day}, ${year} ${time}`;
 
 timeSlot.innerHTML = formattedDate;
-main.insertBefore(timeSlot, section)
+main.insertBefore(timeSlot, section);

@@ -7,7 +7,7 @@ nav {
   display: flex;
   justify-content: space-around;
   -webkit-box-shadow: 0 0 30px 3px #6a69696d;
-    box-shadow: 0 0 30px 3px #65616163;
+  box-shadow: 0 0 30px 3px #65616163;
 }
 
 nav .nav-lists {
@@ -24,13 +24,12 @@ nav .nav-lists .nav-item {
   border-radius: 5px;
 }
 
-nav .nav-lists .nav-item:hover{
+nav .nav-lists .nav-item:hover {
   cursor: pointer;
   transform: translateX(1px);
   text-decoration: underline;
   background-color: #f2dcb3;
 }
-
 
 nav .active {
   color: rgb(223, 145, 9);
@@ -51,18 +50,15 @@ main {
   display: contents;
 }
 
-.localTime{
+.localTime {
   position: fixed;
   top: 90px;
   right: 30px;
 }
-h1,
-h2{
-  text-align: center;
-}
 
 h1,
 h2 {
+  text-align: center;
   font-size: 40px;
 }
 
@@ -118,11 +114,11 @@ ul li button {
   color: white;
 }
 
-footer{
+footer {
   width: 100%;
   position: fixed;
   bottom: 0;
   padding-left: 50px;
   -webkit-box-shadow: 0 0 30px 3px #6a69696d;
-    box-shadow: 0 0 30px 3px #65616163;
+  box-shadow: 0 0 30px 3px #65616163;
 }
