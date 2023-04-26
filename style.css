@@ -1,13 +1,39 @@
-
 body {
   padding: 0;
   margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  font-size: 23px;
 }
 
 main {
   padding: 50px 0;
   margin: 5% auto;
   width: 50%;
+}
+
+nav .active {
+  color: rgb(223, 145, 9);
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
+  display: contents;
 }
 
 h1 {
@@ -37,7 +63,7 @@ ul li {
   border-radius: 5px;
 }
 
-ul li:nth-child(odd) {
+.book-list:nth-child(odd) {
   background-color: rgb(199, 195, 195);
 }
 
@@ -58,9 +84,9 @@ form input {
 }
 
 form button {
-  margin-left: 35%;
+  margin-left: 43%;
   width: 60px;
-  background-color: #37d547;
+  background-color: #3234cb;
   color: white;
   border-radius: 5px;
   padding: 4px 8px;
