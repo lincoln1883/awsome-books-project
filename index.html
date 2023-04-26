@@ -10,7 +10,7 @@
   <body>
     <nav>
       <h3>Awesome Books</h3>
-      <ul>
+      <ul class="nav-lists">
         <li class="nav-item active">List</li>
         <li class="nav-item">Add new</li>
         <li class="nav-item">Contact</li>
@@ -22,29 +22,28 @@
         <div class="list-display">
           <ul class="book-display"></ul>
         </div>
-        <hr />
       </section>
       <section class="sections hidden" id="add">
         <form action="" id="form">
           <h2>Add a new book</h2>
-          <input id="title" type="text" placeholder="Title" /><br /><br />
-          <input id="author" type="text" placeholder="Author" /><br /><br />
+          <input id="title" type="text" placeholder="Title" required /><br /><br />
+          <input id="author" type="text" placeholder="Author" required /><br /><br />
           <button id="submit-button" type="submit">Add</button>
         </form>
       </section>
       <section class="sections hidden" id="contact">
         <h2>Contact information</h2>
-        <p>Do have any question or you just want to say "Hello"?</p>
-        <p>You can reach out to us!</p>
-        <ul>
-          <li>Our e-mail <a href="#">mail@mail.com</a></li>
+        <p>Do have any question or you just want to say "Hello"?<span>
+        </span>You can reach out to us!</p>
+        <ul class="contact-lists">
+          <li>Our e-mail: <a href="#">mail@mail.com</a></li>
           <li>Our phone number: <a href="#">1-202-505-225</a></li>
-          <li>Our address:</li>
+          <li>Our address: Microverse online school for Web Developers.</li>
         </ul>
       </section>
     </main>
     <footer>
-      <p>Copyright</p>
+      <p> &copy; Copyright Awsome books 2023</p>
     </footer>
     <script src="index.js"></script>
   </body>

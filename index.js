@@ -37,7 +37,7 @@ class Book {
   }
 
   handleFormSubmit(e) {
-    e.preventDefault();
+    //e.preventDefault();
     const title = titleInput.value;
     const author = authorInput.value;
     const book = new Book(title, author);
@@ -82,4 +82,28 @@ for (let i = 0; i < navList.length; i += 1) {
 }
 
 
+const main = document.querySelector('main');
+const timeSlot = document.createElement('p');
+const section = document.querySelector('section')
+timeSlot.classList.add('localTime');
 
+console.log('main:', main);
+console.log('section:', section);
+
+const date = new Date()
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const month = months[date.getMonth()] 
+const day = date.getDate()
+const year = date.getFullYear()
+let hour = date.getHours()
+let minute = date.getMinutes()
+
+const timeOfDay = hour >= 12 ? "pm" :"am"
+hour = hour % 12;
+hour = hour ? hour : 12;
+minute = minute < 10 ? '0' + minute : minute;
+const time = `${hour}:${minute} ${timeOfDay}`;
+const formattedDate = `${month} ${day}, ${year} ${time}`
+
+timeSlot.innerHTML = formattedDate;
+main.insertBefore(timeSlot, section)
